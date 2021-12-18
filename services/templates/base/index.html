@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="{% static '' %}img/gab.png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{% static '' %}style.css">
+
+</head>
+
+<body style="background: ">
+    <!-- Preloader -->
+   <!--  <div id="preloader">
+        <div class="loader"></div>
+    </div> -->
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area">
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alimeNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="/">
+                            <img src="{% static '' %}img/gab.png" alt="" style="width: 60px;">
+                            <!-- <h2 class="text-light mt-2">GAB<span style="color: gold;">.</span></h2> -->
+                        </a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                           
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                          
+                            <div class="classynav">
+                                <ul id="nav" id="menu-nav">
+                                    <li><a href="/" style="">ACCUEIL</a></li>
+                                    <li><a href="{% url 'about' %}">A PROPOS</a></li>
+                                    <li><a href="{% url 'portofolio' %}">PORTOFOLIO</a></li>
+                                    <li><a href="{% url 'contact' %}">CONTACT</a></li>
+                                </ul>
+
+                            </div>
+                            
+
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content align-items-center" align="center">
+
+                        <div class="mt-3">
+                            <a href="https://wa.me/242069280039" target="_blank" id="whatsapp-icone" class="bg-success mb-3"><i class="fa fa-whatsapp"></i></a>
+                            
+                            <a href="https://instagram.com/global_academia_business?utm_medium=copy_link" target="_blank" id="instagram-icone" class="bg-danger mb-3"><i class="fa fa-instagram"></i></a>
+                            
+                            <a href="https://www.facebook.com/gabcongo/" target="_blank" id="facebook-icone" class="bg-primary mb-3"><i class="fa fa-facebook"></i></a>
+
+                            <br>
+
+                            <small class="text-muted">Copyright &copy; GAB - <script>document.write(new Date().getFullYear());</script> | All rights reserved</small>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery 2.2.4 -->
+    <script src="{% static '' %}js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="{% static '' %}js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="{% static '' %}js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="{% static '' %}js/bundle.js"></script>
+    <!-- Active -->
+    <script src="{% static '' %}js/default-assets/active.js"></script>
+
+</body>
+
+</html>
