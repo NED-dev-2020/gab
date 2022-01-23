@@ -6,7 +6,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('gab-admin/', admin.site.urls),
 
     path('', include('services.urls')),
 ]
